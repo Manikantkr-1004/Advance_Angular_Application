@@ -1,0 +1,10 @@
+
+<div id="parent">
+    <div class="child" *ngFor="let item of data">
+        <img src={{item.image}} alt={{item.title}}>
+        <h3>Title:- {{item.title}}</h3>
+        <h3>Price:- ₹{{item.price}}</h3>
+        <button routerLink="details/{{item.id}}">View More...</button>
+        <button (click)="addCart(item.id)">{{checkCart(item.id)}}</button>
+    </div>
+</div>

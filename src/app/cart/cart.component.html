@@ -1,0 +1,13 @@
+<h1 *ngIf="cart.length===0">Cart Empty!!</h1>
+<div id="parent">
+    <div class="child" *ngFor="let item of cart">
+        <img src={{item.image}} alt={{item.title}}>
+        <h3>Title:- {{item.title}}</h3>
+        <h3>Price:- ₹{{item.price}}</h3>
+        <h4>Category:- {{item.category}}</h4>
+        <h4>Rated by {{item.rating.count}}Peoples with {{item.rating.rate}}🌟 </h4>
+        <button (click)="removeItem(item.id)">Remove</button>
+    </div>
+</div>
+
+<button *ngIf="cart.length>0" (click)="buyAll()" class="buy">Buy All</button>

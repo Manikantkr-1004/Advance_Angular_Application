@@ -1,0 +1,24 @@
+div{
+    width: 300px;
+    margin: auto;
+    margin-top: 70px;
+    padding: 10px;
+}
+div input{
+    width: 100%;
+    padding: 6px 0px;
+}
+div button{
+    width: 100%;
+    padding: 10px 0px;
+    background: #000;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+div button:active{
+    scale: 0.9;
+    border-radius: 4px;
+}

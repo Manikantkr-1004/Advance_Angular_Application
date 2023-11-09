@@ -1,0 +1,26 @@
+#parent{
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.child{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.child img{
+    width: 150px;
+}
+.child>button{
+    border: none;
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    border: 1px solid #8a8a8a;
+}
